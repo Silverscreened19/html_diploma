@@ -27,7 +27,7 @@ p {
     margin: 0;
 }
 
-h3 {
+h3, h5 {
     margin: 0;
 }
 
@@ -165,16 +165,18 @@ ul {
 
 .trends-container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
-.trend-card {
+/* .trend-card {
     position: relative;
     width: calc((100% - 12px) / 4);
+    margin-right: 4px;
+    display: flex;
     overflow: hidden;
-}
+} */
 
-.trend-card::after {
+/* .trend-card::after {
     content: "";
     position: absolute;
     top: 0;
@@ -183,9 +185,10 @@ ul {
     left: 0;
     background-color: #000000;
     opacity: 0.6;
-}
+    box-sizing: border-box;
+} */
 
-.trend-image-container {
+/* .trend-image-container {
     overflow: hidden;
 }
 
@@ -193,17 +196,70 @@ ul {
     display: block;
     min-width: 100%;
     object-fit: cover;
+} */
+
+
+.trend-card {
+	display: flex;
+	align-items: flex-end;
+	width: calc(25% - 4px);
+	flex-grow: 1;
+	padding: 9% 20px 20px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	background-color: #1c2141;
+	position: relative;
+	z-index: 0;
+}
+.trend-card::before {
+	content: "";
+	background-color: #000000;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0.6;
+	z-index: -1;
+}
+
+.trend-card:last-child {
+	width: 25%;
+	margin-right: 0;
+}
+
+.trend-card-garden {
+	background: url("/images/trend1.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.trend-card-cheese {
+	background: url("/images/trend2.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.trend-card-trip {
+	background: url("/images/trend3.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.trend-card-lemon {
+	background: url("/images/trend4.jpg") no-repeat center center;
+	background-size: cover;
 }
 
 .trend-content {
-    position: absolute;
+    /* position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 1;
     margin: 16px 22px;
     padding: 32px 33px;
-    border: 3px solid #b59f5b;
+    border: 3px solid #b59f5b; */
+    width: 100%;
+	padding: 40px 40px 35px 25px;
+	border: solid 3px #b59f5b;
 }
 
 .trend-tags {
