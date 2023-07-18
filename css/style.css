@@ -165,39 +165,7 @@ ul {
 
 .trends-container {
     display: flex;
-    /* justify-content: space-between; */
 }
-
-/* .trend-card {
-    position: relative;
-    width: calc((100% - 12px) / 4);
-    margin-right: 4px;
-    display: flex;
-    overflow: hidden;
-} */
-
-/* .trend-card::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-    opacity: 0.6;
-    box-sizing: border-box;
-} */
-
-/* .trend-image-container {
-    overflow: hidden;
-}
-
-.trend-image {
-    display: block;
-    min-width: 100%;
-    object-fit: cover;
-} */
-
 
 .trend-card {
 	display: flex;
@@ -249,14 +217,6 @@ ul {
 }
 
 .trend-content {
-    /* position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    margin: 16px 22px;
-    padding: 32px 33px;
-    border: 3px solid #b59f5b; */
     width: 100%;
 	padding: 40px 40px 35px 25px;
 	border: solid 3px #b59f5b;
